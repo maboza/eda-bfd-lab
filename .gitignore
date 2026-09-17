@@ -1,0 +1,21 @@
+# Other tooling that shares this working directory but is not part of this
+# repo. Listed here so a `git add -A` cannot pick it up by accident.
+fix-eda-trust.sh
+configure.cli
+interface_event_handler.py
+BT EH script.zip
+generate_bfd_config.py
+
+# Editor / agent local config
+.claude/
+
+# Generated output - reproducible from generate-eda-bfd.sh, and large
+# (out-bfd is ~1.5 MB of YAML).
+out-bfd/
+output/
+output_stage10/
+
+# Scratch
+*.tmp
+*.bak
+*~

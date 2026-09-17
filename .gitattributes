@@ -1,0 +1,15 @@
+# These scripts are executed by bash inside WSL. Windows checkouts default to
+# core.autocrlf=true, which would rewrite them with CRLF endings and break them
+# at the shebang ("bad interpreter: /bin/bash^M"). Force LF regardless of
+# platform or user config.
+*.sh    text eol=lf
+*.py    text eol=lf
+*.cli   text eol=lf
+*.yaml  text eol=lf
+*.yml   text eol=lf
+*.md    text eol=lf
+.gitignore     text eol=lf
+.gitattributes text eol=lf
+
+*.zip   binary
+*.csv   text
